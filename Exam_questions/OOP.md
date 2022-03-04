@@ -126,6 +126,17 @@
 + **Полиморфизм** - это возможность работать с несколькими типами так, будто это один и тот же тип. При этом поведение 
   объектов будет разным в зависимости от типа, к которому они принадлежат.
 
+  AbstractPhone firstPhone = new ThomasEdisonPhone(1879);
+  AbstractPhone phone = new Phone(1984);
+  AbstractPhone videoPhone=new VideoPhone(2018);
+  User user = new User("Андрей");
+  user.callAnotherUser(224466,firstPhone);
+  // Вращайте ручку
+  //Сообщите номер абонента, сэр
+  user.callAnotherUser(224466,phone);
+  //Вызываю номер 224466
+  user.callAnotherUser(224466,videoPhone);
+  //Подключаю видеоканал для абонента 224466
 [к оглавлению](#OOP)
 
 ## 3. Укажите из каких элементов состоит класс?
